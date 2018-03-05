@@ -1,15 +1,15 @@
 
-var customizeURL = '/demo/incv/customize/api/',
-    customizeHTML = '\
-    <div id="wrap-customize"><div id="customize">\
-        <a href="#" class="action" id="customize-show">&lsaquo; Show</a>\
-        <span class="label title">InCV</span>\
-        <span class="label">Select skin</span>\
-        <ul id="skin-list">\
-        </ul>\
-        <a href="#" class="action" id="customize-hide">Hide &rsaquo;</a>\
-    </div></div>\
-';
+// var customizeURL = '/demo/incv/customize/api/',
+//     customizeHTML = '\
+//     <div id="wrap-customize"><div id="customize">\
+//         <a href="#" class="action" id="customize-show">&lsaquo; Show</a>\
+//         <span class="label title">InCV</span>\
+//         <span class="label">Select skin</span>\
+//         <ul id="skin-list">\
+//         </ul>\
+//         <a href="#" class="action" id="customize-hide">Hide &rsaquo;</a>\
+//     </div></div>\
+// ';
 
 Modernizr.load([
     'customize/customize.css',
