@@ -1,0 +1,325 @@
+﻿<!doctype html >
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+
+    <title>Shuai Zheng's Resume</title>
+    <meta name="description" content="Shuai Zheng's Resume">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- you can change css skin here -->
+    <link rel="stylesheet" id="skin_css" href="css/skins/default.css">
+
+    <!-- contains styles not supported by IE 6, 7, 8 -->
+    <!--[if gt IE 8]><!-->
+    <!-- css3 hover effects -->
+    <link rel="stylesheet" media="screen" href="css/effects/all.css">
+    <!-- for screens 768px or less in width -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css"/>
+    <!-- iPhone specific -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width : 320px) and (max-device-width: 480px)"
+          href="css/mobile.css"/>
+    <!-- <![endif]-->
+
+    <!-- printing rules -->
+    <link rel="stylesheet" media="print" href="css/print.css">
+
+    <!-- Fancybox Plugin -->
+    <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+
+    <!--link rel="shortcut icon" href="favicon.gif" /-->
+
+    <!-- Facebook picture -->
+    <meta property="og:image" content="facebook_icon.jpg">
+
+    <!-- modify this file to add any changes. This will make update process much easier -->
+    <link rel="stylesheet" href="css/user.css">
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- header block -->
+
+    <header class="wrap-header">
+        <article>
+
+            <div class="wrap-ribbons">
+                <a class="ribbon" href="#" th:href="@{/resume/resume.pdf}">Download <em>CV</em></a>
+                <!--<a class="ribbon ribbon2 zoom-html" href="#contacts">Contact <em>Me</em></a>-->
+            </div>
+
+            <div class="wrap-title">
+                <h1>CV of <span>Shuai Zheng</span></h1>
+                <p>Professional Software Developer</p>
+            </div>
+
+            <div class="social-services">
+                <!-- social services: tweet / google +1 / facebook like -->
+                <div class="wrap-g-plusone">
+                    <div class="g-plusone" data-size="medium"></div>
+                </div>
+                <div class="wrap-fb-like">
+                </div>
+            </div>
+
+        </article>
+    </header>
+    <!-- information block -->
+
+    <div class="row row-info">
+        <article class="markup">
+
+            <h2 class="section-title">About Me</h2>
+
+            <!-- add your content here -->
+            <!-- html markup supported -->
+
+            <p>
+                After attending the University of California, Irvine, I fell into love with programming. My curiousity
+                drives me into this ocean of knowledge, where I began my journey to become a backend developer. </p>
+
+            <blockquote>
+                Be the change that you wish to see in the world.
+                <footer>
+                    &mdash; Mahatma Gandhi
+                </footer>
+            </blockquote>
+
+        </article>
+    </div>
+
+    <div class="row row-portfolio">
+        <article>
+
+            <h2 class="section-title">Portfolio</h2>
+
+
+            <ul class="portfolio">
+
+                <li class="effect2">
+                    <div class="border">
+                        <img src="img/demo/ugne.jpg" th:src="@{img/demo/cts.png}" alt=""/>
+                        <div class="mask">
+                            <h2>www.inthe.me</h2>
+                            <p>
+                                Here goes a short description of the work.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="view">visit</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="effect2">
+                    <div class="border">
+                        <img src="img/demo/informer.jpg" alt=""/>
+                        <div class="mask">
+                            <h2>www.inthe.me</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum odio, auctor mattis.
+                            </p>
+                            <a href="#" class="view">visit</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="effect2">
+                    <div class="border">
+                        <img src="img/demo/fromvilnius.jpg" alt=""/>
+                        <div class="mask">
+                            <h2>www.inthe.me</h2>
+                            <p>
+                                Nunc ipsum odio, auctor mattis. Sed vel urna et augue malesuada pulvinar in ut est.
+                            </p>
+                            <a href="#" class="view">visit</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="border">
+                        <a href="img/demo/photo-1-big.jpg" class="zoom-image"><img src="img/demo/photo-1-small.jpg"
+                                                                                   alt=""/></a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="border">
+                        <a href="" class="zoom-video"><img src="img/demo/youtube.jpg"
+                                                                                   alt=""/></a>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </article>
+    </div>
+
+    <!-- experience block -->
+
+    <div class="row row-experience">
+        <article>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="column-row">
+
+                <div class="column column-no-logo">
+                    <h3>Backend Software Developer</h3>
+
+                    <!-- Logo on the left of the column -->
+                    <a href="" target="_blank" class="logo">
+                        <img src="./img/demo/amazon.png" alt=""/>
+                    </a>
+                    <p class="subtitle">
+                        <a href="https://www.siminsights.com/">Siminsights, Inc.</a> &mdash; Java Backend<br/>
+                        Nov. 2017 - Present
+                    </p>
+                    <div class="smaller-text">
+                        <p>
+                            I use Java Spring Boot and Hibernate framework to make API based on mysql database. In
+                            addition, I also use websocket and RabbitMQ middleware to make Chat App.
+                            The web app is made by React and deployed by docker.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="column column-no-logo">
+                    <h3>Lead Software Developer and UI Designer</h3>
+
+                    <p class="subtitle">
+                        <a href="http://www.duixuntech.com">Dui Xun Network Technology Co.ltd</a> &mdash; Backend
+                        developer for Mobile App<br/>
+                        Jan. 2017 - Present (Remote)
+                    </p>
+                    <div class="smaller-text">
+                        <p>
+                            I designed UI using sketch for iOS and Android developers and made HTML5 Website for
+                            company, which was deployed by Docker.
+                            I also used Spring boot Hibernate to move data and modified old mysql database table to fit
+                            new database table.
+                            The image is optimzed by python script bot. What's more, I used Thinkphp framework to make
+                            API based on mysql database.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="row row-education">
+        <article>
+
+            <h2 class="section-title">Education</h2>
+
+            <div class="column-row">
+
+                <div class="column column-no-logo">
+                    <h3>Computer Engineering, B.S</h3>
+                    <p class="subtitle">
+                        <a href="https://uci.edu/" target="_blank">University of California, Irvine</a>, USA<br/>
+                        2013 &mdash; 2017
+                    </p>
+                    <div class="smaller-text">
+                        <p>
+                            Dean Honor Lists. (GPA: 3.767/4.0, Major GPA:3.803/4.0 )
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </article>
+    </div>
+
+
+    <div class="row row-skills">
+        <article>
+
+            <h2 class="section-title">Shuai’s Hierarchy of skills</h2>
+
+            <div class="skills">
+                <p>
+                    Java<br/>
+                    MySQL, SQL<br/>
+                    HTML, iOS, Hibernate<br/>
+                    <b class="caption">My top skills.</b>
+                    Spring Boot, good taste for design/UX
+                </p>
+                <p>
+                    Mobie Design, Sketch, Docker, Bootstrap<br/>
+                    Linux, OS X, React, MySQL, Apache Webserver, Amazon AWS<br/>
+                    <b class="caption">Some experience.</b>
+                    Machine Learning, Nureal Network, C#, Embedded System, Unity, SEO,CSS
+                </p>
+                <p>
+                    Mathematica, Firebase, Parse, Verilog, VHDL, Usabiliy testing, Facebook API<br/>
+                    Thinkphp, Mongodb, Latex, Python, iOS, Android, Mobile application development<br/>
+
+                </p>
+            </div>
+
+        </article>
+    </div>
+
+
+</div>
+
+
+<div id="resize">Resize</div>
+
+<!-- jQuery 1.6.2 -->
+<script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<script src="js/libs/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script defer src="js/plugins.js"></script>
+<script defer src="js/script.js"></script>
+
+<script defer src="customize/customize.js"></script>
+
+
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, "script", "twitter-wjs");</script>
+
+<script type="text/javascript">
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = '';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
+
+</body>
+</html>
